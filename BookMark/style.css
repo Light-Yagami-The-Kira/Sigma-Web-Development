@@ -1,0 +1,21 @@
+body
+{
+    background-color: rgb(231, 49, 161);
+}
+h1
+{
+    background-color: aqua;
+}
+h2
+{
+    background-color: greenyellow;
+}
+h3
+{
+    background-color: rgb(255, 255, 255);
+    font-style: italic;
+}
+h4
+{
+    background-color: white;
+}
