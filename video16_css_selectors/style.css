@@ -1,0 +1,43 @@
+#i_am_div{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+
+p{
+    background-color: aquamarine;
+}
+div > article > p{
+    background-color: rgb(21, 103, 122)
+}
+
+/* div p{} */
+/* div ke andar kahin pe bhi p */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* pseudo selector */
+a:link{
+    color: rgb(187, 195, 47);
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    background-color: yellow;
+    color: green;
+}
+
+a:active{
+    background-color: black;
+    color: white;
+}
+
+p:first-child{
+    background-color: rgb(18, 130, 68);
+}
+
