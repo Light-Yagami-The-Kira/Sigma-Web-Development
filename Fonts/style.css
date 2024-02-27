@@ -1,0 +1,30 @@
+p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style: oblique;
+}
+h1{
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+h2{
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 2;
+    hyphens: auto;
+    text-decoration: overline;
+    text-decoration-style: dashed;
+    text-decoration-color: red;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    text-align: right;
+    text-justify: inter-word;
+    text-indent: 10px;
+    text-overflow: clip;
+    text-shadow: 2px 2px 2px red;
+}
+
