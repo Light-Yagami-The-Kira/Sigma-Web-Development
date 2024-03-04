@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and Outline</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .box {
+            border: 2px solid blue;
+            padding: 34px;
+            box-shadow: 10px 10px 30px 20px red inset;
+        }
+
+        .box2 {
+            display: flexbox;
+            width: 200px;
+            border: 2px solid blue;
+            margin-top: 100px;
+            padding: 34px;
+            box-shadow: 10px 10px 30px 20px red;
+            outline: 10px solid green;
+            outline-offset: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box3{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">Helloworld</div>
+    <div class="box2">Helloworld</div>
+    <div class="box3">Helloworld from box 3</div>
+
+</body>
+
+</html>
