@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+
+        :root{
+            --color: blue;
+            --seccolor: red;
+        }
+
+
+        div:first-child {
+            /* background-color: rgb(5, 85, 23); */
+            background-color: var(--color);
+        }
+        .container{
+            /* background-color: rgb(9, 188, 9); */
+            background-color: var(--seccolor, white);
+                                                /* |--> when the variable is not defined, it will take the default value */
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li:first-child{
+            --color: orange;
+            color: var(--color);
+        }
+
+        ul li{
+            list-style: none;
+            margin: 10px;
+            padding: 6px;
+            border: 3px solid black;
+            
+        }
+        ui li:hover{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus est modi ipsum eius nihil voluptas obcaecati atque veritatis a. Eaque veniam sed, impedit omnis asperiores laudantium sint magnam ipsam aspernatur dolorem nam modi maxime ipsum recusandae voluptatum incidunt esse molestiae vero deserunt mollitia eveniet. Cum.
+    </div>
+</body>
+</html>
+
