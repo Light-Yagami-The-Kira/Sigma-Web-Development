@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on FlexBox</title>
+    <style>
+        .item {
+            flex-grow: 1;
+            height: 20px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 26px;
+            padding: 9px;
+        }
+
+        .container {
+            height: 300px;
+            border: 3px solid black;
+            display: flex;
+            /* justify-content: space-between; */
+            justify-content: right;
+            align-items: flex-end;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Default order 0 */
+
+        .order1{
+            order: 1;
+            flex-grow: 10;
+        }
+        .order2{
+            order: 2;
+            flex-shrink: 10;
+        }
+        .order3{
+            order: 3;
+        }
+        .order4{
+            order: 4;
+        }
+        .order5{
+            order: 5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order1">Item 1</div>
+            <div class="item order2">Item 2</div>
+            <div class="item order3">Item 3</div>
+            <div class="item ">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item order4">Item 8</div>
+            <div class="item order5">Item 9</div>
+            <div class="item order6">Item 10</div>
+            <div class="item order7">Item 11</div>
+            <div class="item order8">Item 12</div>
+            <div class="item">Item 13</div>
+            <div class="item">Item 14</div>
+            <div class="item">Item 15</div>
+            <div class="item">Item 16</div>
+            <div class="item">Item 17</div>
+            <div class="item">Item 18</div>
+            <div class="item">Item 19</div>
+            <div class="item">Item 20</div>
+
+        </div>
+    </main>
+</body>
+
+</html>
