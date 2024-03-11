@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:nth-child(1){
+            background-color: red;
+        }
+        .box:nth-child(even){
+            border: 2px solid black;
+        }
+        .box::first-line{
+            background-color: aqua;
+        }
+        [data-color="primary"]{
+            background-color: blueviolet;
+        }
+
+        .anotherpara::before{
+            content: "Hello World";
+            color: blue;
+            font-size: xx-large;
+        }
+        .anotherpara::after{
+            content: "Bye World";
+            color:  red;
+            font-size: xx-large;
+        }
+
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box.</div>
+        <div class="box">Hey I am a box. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil necessitatibus, sapiente fugiat odio quos nostrum adipisci earum sit in aliquam vel dolores similique voluptatum ex distinctio quo fuga reiciendis nam eveniet excepturi! Voluptatem.</div>
+        <div class="box" data-color="primary" >Hey I am a box. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis explicabo at nam tempora voluptatibus odio, quia et, repellat eveniet maiores ratione unde porro delectus illum eaque harum similique, adipisci reiciendis corrupti totam natus cum facere omnis? Corporis ullam omnis non ratione corrupti! Numquam cupiditate ea blanditiis, placeat laborum perferendis.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, impedit unde sapiente, sit quas officia iure veniam aliquam velit expedita excepturi, quis corrupti autem eligendi eos consectetur saepe quo. Ad magni at unde odit facilis. Quis rem eius sint fugit tempora quidem corrupti libero assumenda nostrum dolorem eaque blanditiis consectetur, laudantium deleniti quasi velit harum ullam, molestias sapiente, amet maiores accusamus unde? Ea repellendus facilis nesciunt est minima odit adipisci amet vel, aperiam ex ipsa neque consequuntur? Molestias dolorum consequatur dignissimos corrupti laudantium incidunt aliquid voluptas? Officiis molestias libero cumque ex corporis eveniet nesciunt quae nihil vel dolorum, amet quo nemo excepturi vitae unde voluptate esse qui non laboriosam illum, itaque placeat? Ad voluptatum sit, sapiente ducimus, pariatur sequi eaque perspiciatis eum veritatis facere unde totam id quidem harum voluptates animi ex ratione reprehenderit vitae. Similique explicabo voluptatibus nemo quod ducimus nisi reprehenderit voluptas, rerum quae eligendi minus excepturi saepe sunt itaque culpa hic, dolorem mollitia natus recusandae omnis optio? Fugiat aliquam quasi beatae voluptas earum minus odit necessitatibus non soluta magnam accusamus labore, quas blanditiis praesentium modi, accusantium incidunt reprehenderit ea error vitae, eius cupiditate saepe? Ex quae, iste illum nobis pariatur deserunt nesciunt distinctio nihil a eos mollitia dolor, aperiam reprehenderit optio ea obcaecati consectetur cumque, quo veniam repellendus est unde officiis aliquid? Iusto, cupiditate veritatis! Labore quis sit magnam. Adipisci, magni quidem quae, quaerat animi repudiandae nemo accusamus optio dolorum rem quo deleniti corrupti qui est aspernatur rerum maxime provident recusandae magnam mollitia? Amet optio minus adipisci sapiente nemo quis? Dignissimos obcaecati ex maiores doloribus a nobis ea tempore nesciunt repellendus architecto! Explicabo, alias id inventore magni dolores suscipit nam ea repellendus, voluptatum quod quisquam modi voluptas cumque sapiente ullam magnam consequatur? Commodi at distinctio quia omnis, nesciunt vero. Quo ratione, rerum magni veniam placeat labore suscipit nesciunt ea odio corporis officia? Consequuntur facilis quod accusamus. Beatae nisi repudiandae architecto? Beatae, voluptatibus expedita quisquam quis neque sed repudiandae, voluptates quod, eligendi voluptas natus laborum! Libero, eaque dicta modi et temporibus odio commodi assumenda praesentium voluptatem voluptate veritatis. Dolores iure maxime aut cum rem delectus, eos adipisci minus doloremque quod, sint reiciendis sapiente deserunt architecto exercitationem autem corrupti eaque eum nihil, laboriosam enim! Adipisci, ipsum dicta. Mollitia repellat, soluta harum, perferendis libero aperiam facere autem quis vel totam consequuntur quam odit repellendus nobis? Nihil deserunt nesciunt ea eveniet quam fugiat excepturi ullam alias. Expedita quod necessitatibus ad repellendus!</div>
+    </div>
+
+    <div class="anotherpara">
+        <h2>Hello World</h2>
+    </div>
+
+</body>
+</html>
